@@ -12,7 +12,7 @@
     <form>
       <input type="text" class="txt" name="item" placeholder="Life goal..." [(ngModel)]="goalText"> <!-- 2-way binding -->
       <br><span>{{goalText}}</span>
-      <input type="submit" class="btn" [value]="btnText" > <!-- property binding & event binding-->
+      <input type="submit" class="btn" [value]="btnText" (click)="addItem()"> <!-- property binding & event binding-->
     </form>
   </div>
   <div class="col">
